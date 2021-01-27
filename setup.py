@@ -19,8 +19,8 @@ with open(path.join(SCRIPT_DIR, 'README.md'), encoding='utf-8') as f:
 setup(
     name='prp1',
     python_requires='>=2',
-    version='1.0.1',
-    description='This package is a part of our research process regarding issue #1884',
+    version='1.0.4',
+    description='This package is a part of Dustico research process regarding issue #1884',
     long_description_content_type='text/markdown',
     long_description=long_description,
     url='https://github.com/dustico/pypi-research-package-1',
@@ -47,5 +47,6 @@ setup(
     ],
     keywords='prp1 dustico research',
     packages=['prp1'],
-    install_requires=[]
+    setup_requires=['requests'],
+    install_requires=['requests']
 )
